@@ -62,7 +62,10 @@ restart_quiz.onclick = ()=>{
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
-    window.location.reload(); //reload the current window
+    window.location.reload(); 
+        // Retrieve and display the userScore from local storage
+    const savedUserScore = localStorage.getItem('userScore');
+    console.log('User Score from Local Storage:', savedUserScore);//reload the current window
 }
 
 const next_btn = document.querySelector("footer .next_btn");
@@ -163,6 +166,11 @@ function showResult(){
         let scoreTag = '<span>and sorry 😐, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
+        // save the userScore to local storage
+        localStorage.setItem('userScore', userScore);
+            // Retrieve and display the userScore from local storage
+        const savedUserScore = localStorage.getItem('userScore');
+        console.log('User Score from Local Storage:', savedUserScore);
 }
 
 function startTimer(time){
@@ -210,3 +218,17 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
+
+var userName = prompt('Enter username');
+
+
+// Check if the user entered a value
+if (userName !== null && userName.trim() !== '') {
+  // Save the userName to local storage
+  localStorage.setItem('userName', userName);
+  alert('Username saved to local storage: ' + userName);
+} else {
+  alert('You did not enter a valid username.');
+}
+

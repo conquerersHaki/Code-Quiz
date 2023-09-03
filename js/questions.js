@@ -1,3 +1,5 @@
+// provided questions for quiz
+
 let questions = [
   {
   numb: 1,
