@@ -4,7 +4,7 @@
 
 ## To use this application, open it up. The user is immediately prompted to input a username which is then saved to the local storage. Upon clicking the start quiz button, user will be brought to a box containing the rules of the quiz. The user can either select the exit button, which brings you back to the start button, or they can click continue, which initiates the quiz itself. There are five questions and the user is timed--they have to answer it within 15 seconds or else they cannot select an answer. Once complete, the window will bring you to a result box that displays your result and a message. The user then can either exit quix or try it again. The username and score at the end of the quiz are saved to and viewable in local storage.
 
-## To access this application, you can click the link provided(https://conquerershaki.github.io/challenge-week-03/) or gain access to it through github.
+## To access this application, you can click the link provided(https://conquerershaki.github.io/challenge-week-04/) or gain access to it through my github.
 
 ![Application Screenshot](./images/Screenshot.jpg)
 
